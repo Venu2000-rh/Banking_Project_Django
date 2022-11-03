@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Entry</title>
+    <style>
+      .img-container {
+        text-align: center;
+        display: block;
+      }
+    h1{
+                background-color: purple;
+                width: 100%;
+                padding: 15px;
+                color: white;
+                border: none;
+                float: center;
+                font-size: 30px;
+            text-align:center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 >Welcome to Bank of Clarivate</h1>
+    {% load static %}
+    <span class="img-container">
+      <img src="{% static 'clarivate.png' %}" alt="">
+    </span>
+    <br></br>
+    <center> <div class="buttonclass">
+                    <a href="http://localhost:8000/signup/"><button type="submit" name="trans" class="btn btn-primary btn-sm bg-dark btninner" style="width: 150px; color:white; background-color: purple; border-radius: 20px;height:40px"><strong>Start Banking</strong></button>
+              </div></center>
+  </body>
+</html>
